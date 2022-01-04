@@ -1,11 +1,13 @@
 ﻿$("#btn").click(() => {
-    let hw = $("#hw").val() * 0.55;
-    let gp = $("#gp").val() * 0.05;
+    let homework = $("#hw").val() * 0.55;
+    let groupProject = $("#gp").val() * 0.05;
     let quiz = $("#quiz").val() * 0.1;
     let exam = $("#exam").val() * 0.2;
     let intex = $("#intex").val() * 0.1;
 
-    let total = hw + gp + quiz + exam + intex;
+    let total = homework + groupProject + quiz + exam + intex;
+
+    total = total.toFixed(2);
 
     let letterGrade = "";
 
